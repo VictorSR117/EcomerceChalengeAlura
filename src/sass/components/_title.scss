@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Arcade;
+    src: url('../../assets/fonts/ARCADE_N.TTF');
+}
+
+@mixin app--title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0;
+    font-family: Arcade;
+}

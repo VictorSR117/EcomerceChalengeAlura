@@ -1,0 +1,6 @@
+@import '../components/title';
+
+.product--title {
+    @include app--title;
+    margin-top: 1.5em;
+}
