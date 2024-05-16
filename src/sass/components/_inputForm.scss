@@ -1,0 +1,19 @@
+@import '../variables';
+
+@mixin form--input {
+    border-radius: 1.8em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: 3px solid $blue1;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+    &::placeholder {
+        color: $blue1;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

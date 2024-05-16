@@ -1,0 +1,12 @@
+@import '../components/inputForm';
+
+.newProduct--form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.form--nameOfTheNewProduct {
+    @include form--input;
+}
