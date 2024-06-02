@@ -11,6 +11,7 @@
 
     &::placeholder {
         color: $blue1;
+        text-transform: capitalize;
     }
 
     &:last-child {

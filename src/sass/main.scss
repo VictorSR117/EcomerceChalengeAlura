@@ -3,3 +3,9 @@
 @import 'variables';
 @import 'header';
 @import 'productsForm/formOfProductForm';
+@import 'productCard';
+@import 'footer';
+
+.mainContent {
+    margin-bottom: 80px;
+}

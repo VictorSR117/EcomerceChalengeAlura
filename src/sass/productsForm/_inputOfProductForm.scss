@@ -1,4 +1,5 @@
 @import '../components/inputForm';
+@import '../components/buttons';
 
 .newProduct--form {
     display: flex;
@@ -9,4 +10,29 @@
 
 .form--nameOfTheNewProduct {
     @include form--input;
+}
+
+.form--actionBtns {
+    display: flex;
+    justify-content: space-evenly;
+
+    & input[type=submit] {
+        @include btn;
+    }
+
+    & input[type=reset] {
+        @include btn;
+    }
+
+    & input[type=file] {
+        @include btn;
+    }
+}
+
+.btn--ligth {
+    @include btn--dark;
+}
+
+.btn--dark {
+    @include btn--ligth;
 }

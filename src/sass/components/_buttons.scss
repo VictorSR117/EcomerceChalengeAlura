@@ -1,0 +1,26 @@
+@import '../variables';
+
+@mixin btn {
+    padding: 1em 3em;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 3px solid $blue1;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+}
+
+@mixin btn--ligth {
+    background-color: #fff;
+    color: $blue1;
+}
+
+@mixin btn--dark {
+    background-color: $blue1;
+    color: #fff;
+}

@@ -15,19 +15,61 @@
         </figure>
     </header>
 
-    <main>
+    <main class="mainContent">
         <section>
             <div class="newProduct">
                 <h2 class="newProduct--title">Adicionar <br> Produto:</h2>
                 <form class="newProduct--form">
-                    <input type="text" placeholder="Nome..." class="form--nameOfTheNewProduct">
-                    <input type="number" placeholder="Preço..." class="form--nameOfTheNewProduct">
+                    <input type="text" placeholder="nome..." class="form--nameOfTheNewProduct">
+                    <input type="number" placeholder="preço..." class="form--nameOfTheNewProduct">
                     <!-- <input type="file" placeholder="Imagem" class="form--nameOfTheNewProduct"> -->
-                    <input type="text" placeholder="Imagem..." class="form--nameOfTheNewProduct">
+                    <input type="text" placeholder="imagem..." class="form--nameOfTheNewProduct">
+                    <div class="form--actionBtns">
+                        <input type="submit" value="guardar" class="btn btn--ligth">
+                        <input type="reset" value="limpar" class="btn btn--dark">
+                    </div>
                 </form>
             </div>
         </section>
+        <section>
+            <br>
+            <h2 class="newProduct--title">Adicionar <br> Produto:</h2>
+            <br>
+            <section class="products">
+                <div class="product--card">
+
+                    <img class="product--img" src="https://i.zst.com.br/thumbs/12/35/f/176670674.jpg" alt="">
+                    <h3 class="product--title">Controle Xbox 60</h3>
+                    <div class="product--details">
+                        <h3 class="product--price">R$ 40,00</h3>
+                        <a class="product--deleteBtn" href="#">
+                            <img src="src/assets/img/lixeira-de-reciclagem.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="product--card">
+
+                    <img class="product--img"
+                        src="https://images-americanas.b2w.io/produtos/1984838999/imagens/garrafa-cantil-termico-goku-500ml-oficial-dragon-ball-z/1984839001_1_large.jpg"
+                        alt="">
+                    <h3 class="product--title">Bola de Futebol</h3>
+                    <div class="product--details">
+                        <h3 class="product--price">R$ 60,00</h3>
+                        <a class="product--deleteBtn" href="#">
+                            <img src="src/assets/img/lixeira-de-reciclagem.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
+    <footer class="footer--content">
+        <img src="src/assets/img/logo.svg" class="header--img" alt="" srcset="">
+        <h3 class="footer--title">Desenvolvido Por Victor Luiz</h3>
+        <br>
+        <span class="footer--description">Alura latam - 2024</span>
+        <br><br><br>
+    </footer>
 </body>
 
 </html>

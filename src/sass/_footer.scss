@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+.footer--content {
+    text-align: center;
+    background-color: $purple2;
+    box-shadow: 10px -10px 1px black;
+}
+
+.footer--title {
+    @include textBiggerAndWhite;
+    font-family: Consola;
+}
+
+.footer--description {
+    @include textBiggerAndWhite;
+    font-family: Inconsolata;
+}

@@ -1,0 +1,61 @@
+@import '_variables.scss';
+@import 'mixins';
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.product--card {
+    max-width: 300px;
+    background-color: $purple2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    @include borderArroundAndBorderBlack;
+    box-shadow: -10px 10px 1px black;
+}
+
+.product--img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: .3s;
+    }
+
+    @include borderArroundAndBorderBlack;
+}
+
+.product--title {
+    color: $white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13pt;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.product--details {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product--price {
+    color: $white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16pt;
+}
+
+.product--deleteBtn img {
+    width: 20px;
+}
